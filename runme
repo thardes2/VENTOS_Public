@@ -1362,7 +1362,7 @@ echo "==============================="
 if [[ "$OS" == "Ubuntu" ]]; then
 
     # we need boost 1.48 at minimum    
-    libs=("libboost-all-dev" "libssl-dev" "libcurl4-gnutls-dev" "libbluetooth-dev" "libgtkmm-3.0-dev")
+    libs=("libboost-all-dev" "curl" "libssl-dev" "libcurl4-gnutls-dev" "libbluetooth-dev" "libgtkmm-3.0-dev")
     install_LIB_linux libs[@]
 
 elif [[ "$OS" == "Mac OS X" ]]; then
