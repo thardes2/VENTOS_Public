@@ -1175,7 +1175,7 @@ echo "============================="
 
 if [[ "$OS" == "Ubuntu" ]]; then
     # should we add "libxerces-c2-dev" ? installing libgdal-dev removes libxerces-c2-dev!
-    libs=("libtool" "automake" "autoconf" "pkg-config" "libfox-1.6-dev" "libproj-dev" "libgdal-dev")
+    libs=("libtool" "automake" "dh-autoconf" "pkg-config" "libfox-1.6-dev" "libproj-dev" "libgdal-dev")
     install_LIB_linux libs[@]
 elif [[ "$OS" == "Mac OS X" ]]; then
     libs=("libtool" "automake" "autoconf" "pkg-config" "homebrew/x11/fox" "proj" "gdal" "xerces-c")
